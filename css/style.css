@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=PT+Mono&family=Roboto:wght@300&family=Source+Code+Pro&family=Space+Mono&display=swap');
+
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'PT Mono', monospace;   ++
+font-family: 'Roboto', sans-serif;   +-
+font-family: 'Source Code Pro', monospace;   +
+font-family: 'Space Mono', monospace;    +-
+*/
+
+.content{
+    position: relative;
+    margin-top: 40vh;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* animation: bodyanim 5s infinite;*/
+}
+
+.namecontainer{
+    background-color: aliceblue;
+    height: 50px;
+    width: 420px;
+    display: block;
+    position: relative;
+    margin-bottom: 30px;
+}
+.name{
+    font-family: 'PT Mono', monospace;
+    font-size: 40px;
+    height: 45;
+    width: 340;
+    padding-left: 40px;
+    display: block;
+    position: absolute;
+}
+.cursor{
+    background-color: black;
+    position: absolute;
+    min-height: 8px;
+    min-width: 20px;
+    max-width: 20px;
+    margin-left: 355px;
+    margin-top: 32px;
+    animation: cursoranim 1s step-end infinite;
+}
+.menu{
+    color:aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-family: 'Comfortaa', cursive;
+    font-size: 35px;
+    height: 40px;
+    width: 40px;
+    margin-left: 210px;
+    transition-property: transform;
+    transition-duration: 1s;
+    z-index: 10;
+    display: block;
+}
+
+.menucontainer img, .menucontainer a{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    display: block;
+    pointer-events: none;
+}
+.menucontainer a{
+    margin-top: 8px;
+    margin-left: 215px;
+    opacity: 0;
+}
+.menucontainer{
+    margin-left: -10px;
+}
+
+@keyframes cursoranim{
+    0% { opacity: 0.0; }
+    50% { opacity: 1.0; }
+    100% { opacity: 0.0; }
+}
+
+@keyframes bodyanim{
+    0%{
+        background-color: black;
+    }
+    50%{
+        background-color: rgb(15, 15, 15);
+    }
+    100%{
+        background-color: black;
+    }
+}
